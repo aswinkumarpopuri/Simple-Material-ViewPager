@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.github.florent37.materialviewpager.header.MaterialViewPagerHeaderDecorator;
 import com.github.florent37.materialviewpager.sample.R;
 import com.github.florent37.materialviewpager.sample.adapters.RVPhotoAdapter;
 import com.github.florent37.materialviewpager.sample.components.DaggerRetrofitComponent;
@@ -142,6 +143,7 @@ public class PhotoFragment extends Fragment {
                     @Override
                     public void onNext(FlickrResult flickrResult) {
                         Log.d(TAG, "onNext");
+                        mPhotoRV.addItemDecoration(new MaterialViewPagerHeaderDecorator());
                         adapter = new RVPhotoAdapter(getContext(), flickrResult.getPhotos().getPhoto());
                         mPhotoRV.setAdapter(adapter);
 

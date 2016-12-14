@@ -48,6 +48,9 @@ public class RecyclerViewFragment extends Fragment {
         } else {
             layoutManager = new LinearLayoutManager(getActivity());
         }
+
+//        layoutManager = new LinearLayoutManager(getActivity());
+
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setHasFixedSize(true);
 
@@ -59,11 +62,11 @@ public class RecyclerViewFragment extends Fragment {
         //mAdapter = new RecyclerViewMaterialAdapter();
         mRecyclerView.setAdapter(mAdapter);
 
-        {
+//        {
             for (int i = 0; i < ITEM_COUNT; ++i) {
                 mContentItems.add(new Object());
             }
             mAdapter.notifyDataSetChanged();
-        }
+//        }
     }
 }

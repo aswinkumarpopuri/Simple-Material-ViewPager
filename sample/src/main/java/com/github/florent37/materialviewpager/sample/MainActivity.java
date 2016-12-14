@@ -50,7 +50,8 @@ public class MainActivity extends DrawerActivity {
                         return RecyclerViewFragment.newInstance();
 //                        return PhotoFragment.newInstance();
                     case 1:
-                        return RecyclerViewFragment.newInstance();
+//                        return RecyclerViewFragment.newInstance();
+                        return PhotoFragment.newInstance();
                     case 2:
                         return WebViewFragment.newInstance();
                     default:
@@ -69,7 +70,7 @@ public class MainActivity extends DrawerActivity {
                     case 0:
                         return "Tab 1";
                     case 1:
-                        return "Tab 2";
+                        return "Flickr Photos";
                     case 2:
                         return "Tab 3";
                     case 3:
@@ -90,15 +91,15 @@ public class MainActivity extends DrawerActivity {
                     case 1:
                         return HeaderDesign.fromColorResAndUrl(
                             R.color.blue,
-                            "http://cdn1.tnwcdn.com/wp-content/blogs.dir/1/files/2014/06/wallpaper_51.jpg");
+                            "http://www.freemagebank.com/wp-content/uploads/edd/2015/09/GL0000383LR.jpg");
                     case 2:
                         return HeaderDesign.fromColorResAndUrl(
                             R.color.cyan,
-                            "http://www.droid-life.com/wp-content/uploads/2014/10/lollipop-wallpapers10.jpg");
+                            "http://kaboompics.com/files/upload/o_1b28pv05a1bid1sh11jdta3g13ka7_new.jpg");
                     case 3:
                         return HeaderDesign.fromColorResAndUrl(
                             R.color.red,
-                            "http://www.tothemobile.com/wp-content/uploads/2014/07/original.jpg");
+                            "http://cdn.barnimages.com/wp-content/uploads/2016/11/2016-03-01-roman-drits-barnimages-007-768x512@2x.jpg");
                 }
 
                 //execute others actions if needed (ex : modify your header logo)

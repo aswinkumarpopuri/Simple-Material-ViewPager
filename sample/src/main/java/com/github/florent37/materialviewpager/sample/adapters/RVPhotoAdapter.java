@@ -36,7 +36,7 @@ public class RVPhotoAdapter extends RecyclerView.Adapter<RVPhotoAdapter.ViewHold
     public void onBindViewHolder(ViewHolder holder, int position) {
         holder.mTextViewTitle.setText(lstRes.get(position).getOwner());
         Glide.with(context)
-                .load("http://snapwiresnaps.tumblr.com/image/153546299766")
+                .load("http://www.freemagebank.com/wp-content/uploads/edd/2014/12/XB000011-1560x1560.jpg")
                 .centerCrop()
                 .fitCenter()
                 .into(holder.mImageViewThumbnail);
