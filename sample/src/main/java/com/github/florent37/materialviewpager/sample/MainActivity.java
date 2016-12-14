@@ -15,6 +15,7 @@ import android.widget.Toast;
 import com.crashlytics.android.Crashlytics;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
+import com.github.florent37.materialviewpager.sample.fragment.PhotoFragment;
 import com.github.florent37.materialviewpager.sample.fragment.RecyclerViewFragment;
 import com.github.florent37.materialviewpager.sample.fragment.WebViewFragment;
 
@@ -47,6 +48,7 @@ public class MainActivity extends DrawerActivity {
                 switch (position % 4) {
                     case 0:
                         return RecyclerViewFragment.newInstance();
+//                        return PhotoFragment.newInstance();
                     case 1:
                         return RecyclerViewFragment.newInstance();
                     case 2:
@@ -65,13 +67,13 @@ public class MainActivity extends DrawerActivity {
             public CharSequence getPageTitle(int position) {
                 switch (position % 4) {
                     case 0:
-                        return "Selection";
+                        return "Tab 1";
                     case 1:
-                        return "Actualités";
+                        return "Tab 2";
                     case 2:
-                        return "Professionnel";
+                        return "Tab 3";
                     case 3:
-                        return "Divertissement";
+                        return "Tab 4";
                 }
                 return "";
             }
@@ -84,7 +86,7 @@ public class MainActivity extends DrawerActivity {
                     case 0:
                         return HeaderDesign.fromColorResAndUrl(
                             R.color.green,
-                            "https://fs01.androidpit.info/a/63/0e/android-l-wallpapers-630ea6-h900.jpg");
+                            "http://www.freemagebank.com/wp-content/uploads/edd/2015/10/GL0000415LR.jpg");
                     case 1:
                         return HeaderDesign.fromColorResAndUrl(
                             R.color.blue,

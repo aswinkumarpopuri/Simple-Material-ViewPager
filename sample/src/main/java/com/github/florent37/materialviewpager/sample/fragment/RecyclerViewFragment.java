@@ -23,7 +23,7 @@ import java.util.List;
 public class RecyclerViewFragment extends Fragment {
 
     static final boolean GRID_LAYOUT = false;
-    private static final int ITEM_COUNT = 100;
+    private static final int ITEM_COUNT = 5;
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private List<Object> mContentItems = new ArrayList<>();

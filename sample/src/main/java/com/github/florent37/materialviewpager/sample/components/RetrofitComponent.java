@@ -1,5 +1,6 @@
 package com.github.florent37.materialviewpager.sample.components;
 
+import com.github.florent37.materialviewpager.sample.fragment.PhotoFragment;
 import com.github.florent37.materialviewpager.sample.modules.RetrofitModule;
 
 import dagger.Component;
@@ -11,5 +12,5 @@ import dagger.Module;
 
 @Component(modules = {RetrofitModule.class})
 public interface RetrofitComponent {
-    void inject();
+    void inject(PhotoFragment photoFragment);
 }
